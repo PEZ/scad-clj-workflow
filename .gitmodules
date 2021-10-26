@@ -1,0 +1,3 @@
+[submodule "scad-clj"]
+	path = scad-clj
+	url = git@github.com:PEZ/scad-clj.git
