@@ -1,6 +1,6 @@
-(ns openscad-experiments.sierpinski
+(ns scad-clj-workflow.sierpinski
   (:require [scad-clj.model :as m]
-            [openscad-experiments.helpers :refer [render]]))
+            [scad-clj-workflow.helpers :refer [render]]))
 
 (def tetra-points [[(/ 1 (Math/sqrt 3)), 0, 0]
                    [(/ -1 (* 2 (Math/sqrt 3))), 1/2, 0]

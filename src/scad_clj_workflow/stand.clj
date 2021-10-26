@@ -1,6 +1,6 @@
-(ns openscad-experiments.stand
+(ns scad-clj-workflow.stand
   (:require [scad-clj.model :as m]
-            [openscad-experiments.helpers :refer [render]]))
+            [scad-clj-workflow.helpers :refer [render]]))
 
 ;; Hull is awesome for sort of stuff
 

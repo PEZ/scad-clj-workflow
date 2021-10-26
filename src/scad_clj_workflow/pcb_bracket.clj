@@ -1,6 +1,6 @@
-(ns openscad-experiments.pcb-bracket
+(ns scad-clj-workflow.pcb-bracket
   (:require [scad-clj.model :as m]
-            [openscad-experiments.helpers :refer [render]]))
+            [scad-clj-workflow.helpers :refer [render]]))
 
 ;; Experiments for mounting brackets using hull
 

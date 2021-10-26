@@ -1,6 +1,6 @@
-(ns openscad-experiments.watering-plug
+(ns scad-clj-workflow.watering-plug
   (:require [scad-clj.model :as m]
-            [openscad-experiments.helpers :refer [render]]))
+            [scad-clj-workflow.helpers :refer [render]]))
 
 ;; Small plug for a 21mm watering pipe (plants)
 

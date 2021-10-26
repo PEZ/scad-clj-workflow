@@ -1,6 +1,6 @@
-(ns openscad-experiments.core-test
+(ns scad-clj-workflow.core-test
   (:require [clojure.test :refer :all]
-            [openscad-experiments.core :refer :all]))
+            [scad-clj-workflow.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."

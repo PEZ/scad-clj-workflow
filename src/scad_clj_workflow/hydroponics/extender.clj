@@ -1,6 +1,6 @@
-(ns openscad-experiments.hydroponics.extender
+(ns scad-clj-workflow.hydroponics.extender
   (:require [scad-clj.model :as m]
-            [openscad-experiments.helpers :refer [render]]))
+            [scad-clj-workflow.helpers :refer [render]]))
 
 (def opening-diameter 55)
 (def outside-diameter 60)

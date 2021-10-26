@@ -1,0 +1,23 @@
+{
+  "calva.customREPLCommandSnippets": [
+    {
+      "key": "m",
+      "name": "Render model",
+      "snippet": "(render (model))"
+    },
+    {
+      "key": "c",
+      "name": "Render current form",
+      "snippet": "(render $current-form)"
+    },
+    {
+      "key": "f",
+      "name": "Render current f",
+      "snippet": "(render ($top-level-defined-symbol))"
+    }
+  ],
+  "cSpell.words": [
+    "minkowski",
+    "rotatec"
+  ]
+}
