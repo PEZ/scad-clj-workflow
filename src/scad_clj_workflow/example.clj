@@ -14,7 +14,7 @@
   (def roof-top-t 1)
   (def roof-color [1/4 1/4 1/4 1])
 
-  (def name-plate-w 210)
+  (def name-plate-w 300)
   (def name-plate-h 40)
   (def plate-t 1)
   (def plate-color [0 0 0 1/4])
@@ -35,7 +35,7 @@
        (m/color plate-color)))
 
 (defn name-label []
-  (->> (m/text "Calva ♥️ scad-clj" :size text-s :halign "center" :valign "center")
+  (->> (m/text "(+ Calva Pitch) => true" :size text-s :halign "center" :valign "center")
        (m/color text-color)
        (m/translate [0 0 text-t])))
 
