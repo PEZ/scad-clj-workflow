@@ -16,15 +16,18 @@ It is very easy to set up. The software stack is Java, the [clojure](https://clo
 
 With those things installed on your computer, you'll be interactively rendering 3D models from Clojure code in something like one minute:
 
-1. Start OpenSCAD
-1. Start VS Code and size the window so that it is above the left pane of OpenSCAD
-1. Open the project
-1. Start the project, **Calva: Start a Project REPL and Connect (aka Jack-in)**
-1. Open an example file, say [extender.clj](src/scad_clj_workflow/hydroponics/extender.clj)
-1. Load the file, **Calva: Load Current File and Dependencies**
+1. Click `Use this template` to create a copy of this repository in your own GitHub account.
+2. Clone the repository: `git clone <url>`
+3. Initialise and download the `scal-clj` submodule: `git submodule update --init --recursive`
+4. Start VS Code and size the window so that it is above the left pane of OpenSCAD
+5. Open the project
+6. Start the project, **Calva: Start a Project REPL and Connect (aka Jack-in)**
+7. Open an example file, say [extender.clj](src/scad_clj_workflow/hydroponics/extender.clj)
+8. Load the file, **Calva: Load Current File and Dependencies**
    * This creates the `render.scad` file at the root of the project.
-1. In OpenSCAD, open `render.scad`
-   * This will render the model and OpenSCAD will hot reload it every time it updates.
+9. Start OpenSCAD
+10. In OpenSCAD, open `render.scad`
+    * This will render the model and OpenSCAD will hot reload it every time it updates.
 
 ## Render away!
 
