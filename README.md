@@ -10,23 +10,25 @@ There is [a demo of the project on YouTube](https://youtu.be/fJpDztSR53E). Pleas
 
 ## Install
 
-It is very easy to set up. The software stack is Java, the [clojure](https://clojure.org/) tool, scad-clj and OpenSCAD. scad-clj is a wrapper/transpiler from Clojure to `.scad`. It makes it super easy to compose in 3D space. (And you don't need to install it.) OpenSCAD shows you the results immediately, in an incredibly easy to use viewer. I am (of course) using Calva in [VS Code](https://code.visualstudio.com).
+It is very easy to set up. The software stack is Java, the [clojure](https://clojure.org/) tool, scad-clj and OpenSCAD. scad-clj is a wrapper/transpiler from Clojure to `.scad`. It makes it super easy to compose in 3D space. OpenSCAD shows you the results immediately, in an incredibly easy to use viewer. I am (of course) using Calva in [VS Code](https://code.visualstudio.com).
+
+This project includes scad-clj as a submodule. Thus, in addition to installing OpenSCAD you'll ”install” scad-clj together with this project:
+
+1. Click `Use this template` to create a copy of this repository in your own GitHub account.
+1. Clone the repository: `git clone <url>`
+1. Initialise and download the `scad-clj` submodule: `git submodule update --init --recursive`
 
 ## Get Started
 
 With those things installed on your computer, you'll be interactively rendering 3D models from Clojure code in something like one minute:
 
-1. Click `Use this template` to create a copy of this repository in your own GitHub account.
-2. Clone the repository: `git clone <url>`
-3. Initialise and download the `scal-clj` submodule: `git submodule update --init --recursive`
-4. Start VS Code and size the window so that it is above the left pane of OpenSCAD
-5. Open the project
-6. Start the project, **Calva: Start a Project REPL and Connect (aka Jack-in)**
-7. Open an example file, say [extender.clj](src/scad_clj_workflow/hydroponics/extender.clj)
-8. Load the file, **Calva: Load Current File and Dependencies**
+1. Start OpenSCAD
+1. Open the project in VS Code and arrange for the VS Code and OpenSCAD windows to show the render view of OpenSCAD while you are working in VS Code.
+1. Start the project, **Calva: Start a Project REPL and Connect (aka Jack-in)**
+1. Open an example file, say [extender.clj](src/scad_clj_workflow/hydroponics/extender.clj)
+1. Load the file, **Calva: Load Current File and Dependencies**
    * This creates the `render.scad` file at the root of the project.
-9. Start OpenSCAD
-10. In OpenSCAD, open `render.scad`
+1. In OpenSCAD, open `render.scad`
     * This will render the model and OpenSCAD will hot reload it every time it updates.
 
 ## Render away!
@@ -100,3 +102,11 @@ And thanks to my [Github Sponsors](https://github.com/sponsors/PEZ), please join
 ## About the examples:
 
 Most of them are @stianeikeland's. This project started as a copy of his [Clojure CSG experiments](https://github.com/stianeikeland/clojurescad-experiments) repository.
+
+## Why scad-clj as a submodule?
+
+There are changes in latest scad-clj `master` that I want available, which are not available in the latest release cut.
+
+## License
+
+See LICENSE.md file. Stian Eikeland choose to use EPL, and I'm not sure if I can just change that, so keeping. But as far as my contributions go, think of them as being fully in the Public Domain, use them in any way you fancy, at your own risks (should be minor, 😄). If you like to credit me, I will be super happy you did.
